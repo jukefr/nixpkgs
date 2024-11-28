@@ -5,7 +5,7 @@
   pkgs,
 }:
 
-python3Packages.buildPythonModule rec {
+python3Packages.buildPythonPackage rec {
   pname = "c-formatter-42";
   version = "0.2.7";
   pyproject = true;
