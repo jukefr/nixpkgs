@@ -19020,4 +19020,6 @@ with pkgs;
   biblioteca = callPackage ../by-name/bi/biblioteca/package.nix {
     webkitgtk = webkitgtk_6_0;
   };
+
+  c-formatter-42 = with python3Packages; toPythonApplication c-formatter-42;
 }
