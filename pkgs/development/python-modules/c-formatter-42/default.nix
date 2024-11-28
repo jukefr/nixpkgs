@@ -1,11 +1,13 @@
 {
   lib,
-  python3Packages,
   fetchFromGitHub,
   pkgs,
+  buildPythonPackage,
+  setuptools,
+  wheel,
 }:
 
-python3Packages.buildPythonPackage rec {
+buildPythonPackage rec {
   pname = "c-formatter-42";
   version = "0.2.7";
   pyproject = true;
@@ -17,7 +19,7 @@ python3Packages.buildPythonPackage rec {
     sha256 = "0x92kj32apvcd86yyplzwzrly5ya0snf1q00nvi1c27vdq45aipa";
   };
 
-  build-system = with python3Packages; [
+  build-system = [
     setuptools
     wheel
   ];
