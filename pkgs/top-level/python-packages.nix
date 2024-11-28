@@ -5758,6 +5758,8 @@ self: super: with self; {
 
   hdmedians = callPackage ../development/python-modules/hdmedians { };
 
+  header42 = callPackage ../development/python-modules/header42 { };
+
   headerparser = callPackage ../development/python-modules/headerparser { };
 
   heapdict = callPackage ../development/python-modules/heapdict { };
